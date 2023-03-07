@@ -5,6 +5,30 @@
   min-height: 100vh;
 }
 
-h1 {
-  margin: 0;
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 14px;
+}
+
+.heading {
+  font-size: 80px;
+  color: red;
+  margin: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: limegreen;
+  color: white;
+  padding: 5px;
+  margin: 5px;
 }
