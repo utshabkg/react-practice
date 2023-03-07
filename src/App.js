@@ -1,11 +1,12 @@
 import "./App.css";
-import Header from "./components/Header";
+import Student from "./components/Student";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <p>Hello ReactJS</p>
+      <Student name="Utshab" age={20} />
+      <Student name="Kumar" age={22} />
+      <Student name="Ghosh" age={25} />
     </div>
   );
 }
