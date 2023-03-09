@@ -4,31 +4,3 @@
   color: white;
   min-height: 100vh;
 }
-
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 14px;
-}
-
-.heading {
-  font-size: 80px;
-  color: red;
-  margin: 10px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn {
-  background-color: orangered;
-  color: white;
-  padding: 5px;
-  margin: 5px;
-}

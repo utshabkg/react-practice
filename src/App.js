@@ -1,31 +1,17 @@
 import "./App.css";
-import Header from "./components/Header";
-// import Movie from "./components/Movie";
+import Header from "./components/header/Header";
+import Counter from "./components/counter/Counter";
+// import Movie from "./components/movie/Movie";
 // import movies from "./movie.json";
-import React, { useState } from "react";
+
 
 function App() {
-  const [num, setNum] = useState(1);
-  function increment(i) {
-    setNum(num + i);
-  }
-  function decrement(i) {
-    setNum(num - i);
-  }
   return (
     <div className="App">
       <Header />
-      <div className="main">
-        <h1 className="heading">{num}</h1>
-        <div className="buttons">
-          <button className="btn" onClick={() => increment(2)}>
-            increment
-          </button>
-          <button className="btn" onClick={() => decrement(1)}>
-            decrement
-          </button>
-        </div>
-        {/* {movies.map((element, index) => {
+      <Counter />
+      
+      {/* {movies.map((element, index) => {
           return ( 
             <Movie
               key={index}
@@ -35,7 +21,6 @@ function App() {
             />
           );
         })} */}
-      </div>
     </div>
   );
 }
