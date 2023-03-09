@@ -1,0 +1,23 @@
+.demo {
+    background-color: rgb(159, 114, 201);
+    padding: 5px;
+
+    h2 {
+        border: solid 2px black;
+        padding: 10px;
+    }
+
+    .data {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .btn-fetch {
+        background-color: purple;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+    }
+}

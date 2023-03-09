@@ -1,7 +1,8 @@
+import "./demo.scss";
 import { useState, useEffect } from "react";
 
 const Demo = () => {
-  const [state, setState] = useState(10);
+  const [state, setState] = useState(2);
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -17,8 +18,20 @@ const Demo = () => {
     getData();
   }, [state]);
   return (
-    <div>
-      <button onClick={() => setState(state + 5)}>Click Me {state}</button>
+    <div className="demo">
+      <h2>Demo Employee List [Showing {state}]</h2>
+      {data.map((element, index) => {
+        return (
+          <div key={index} className="data">
+            <h4>{element.firstName}</h4>
+            <h4>{element.lastName}</h4>
+            <h4>{element.email}</h4>
+          </div>
+        );
+      })}
+      <button onClick={() => setState(state + 2)} className="btn-fetch">
+        Fetch 2 more entries
+      </button>
     </div>
   );
 };
