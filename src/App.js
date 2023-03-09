@@ -6,11 +6,11 @@ import React, { useState } from "react";
 
 function App() {
   const [num, setNum] = useState(1);
-  function increment() {
-    setNum(num + 1);
+  function increment(i) {
+    setNum(num + i);
   }
-  function decrement() {
-    setNum(num - 1);
+  function decrement(i) {
+    setNum(num - i);
   }
   return (
     <div className="App">
@@ -18,10 +18,10 @@ function App() {
       <div className="main">
         <h1 className="heading">{num}</h1>
         <div className="buttons">
-          <button className="btn" onClick={increment}>
+          <button className="btn" onClick={() => increment(2)}>
             increment
           </button>
-          <button className="btn" onClick={decrement}>
+          <button className="btn" onClick={() => decrement(1)}>
             decrement
           </button>
         </div>
