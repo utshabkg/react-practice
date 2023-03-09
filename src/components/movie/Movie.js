@@ -1,10 +1,18 @@
 import "./movie.scss";
-const Movie = (props) => {
+import movies from "../../movie.json";
+
+const Movie = () => {
   return (
-    <div className="movie">
-      <img src={props.img} alt="" />
-      <p>{props.title}</p>
-      <p>Year: {props.year}</p>
+    <div className="container-movie">
+      {movies.map((element, index) => {
+        return (
+          <div key={index} className="movie">
+            <img src={element.Poster} alt="" />
+            <p>{element.Title}</p>
+            <p>Year: {element.Year}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };

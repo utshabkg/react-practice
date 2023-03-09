@@ -1,4 +1,4 @@
-.main {
+.container-movie {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -6,12 +6,12 @@
 
   .movie {
     width: 22%;
-    background-color: rgb(172, 164, 164);
+    background-color: #BFACE2;
     color: rebeccapurple;
-    border: solid 1px gray;
+    border: solid 3px rebeccapurple;
     padding: 3px;
     font-weight: bold;
-    text-align: start;
+    text-align: center;
     margin-top: 14px;
 
     img {
