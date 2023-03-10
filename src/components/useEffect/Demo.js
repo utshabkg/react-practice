@@ -20,6 +20,11 @@ const Demo = () => {
   return (
     <div className="demo">
       <h2>Demo Employee List [Showing {state}]</h2>
+      <div className="data" style={{ color: "yellow" }}>
+        <h4>First Name</h4>
+        <h4>Last Name</h4>
+        <h4>Email</h4>
+      </div>
       {data.map((element, index) => {
         return (
           <div key={index} className="data">
