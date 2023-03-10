@@ -24,6 +24,9 @@ const Header = () => {
       <NavLink style={navLinkStyles} to={"/about"}>
         <h3>About</h3>
       </NavLink>
+      <NavLink style={navLinkStyles} to={"/contact"}>
+        <h3>Contact</h3>
+      </NavLink>
     </div>
   );
 };
