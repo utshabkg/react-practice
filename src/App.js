@@ -19,13 +19,13 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/movie" element={<Movie />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/employees" element={<Demo />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />}>
-            <Route index element={<Insta />} />
+            <Route index element={<Mail />} />
             <Route path="insta" element={<Insta />} />
             <Route path="mail" element={<Mail />} />
           </Route>
