@@ -1,9 +1,13 @@
 .header {
   color: white;
   background-color: rgb(89, 19, 110);
-  padding: 10px;
+  display: flex;
 
-  h1 {
-    display: flex;
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    align-content: center;
+    position: relative;
   }
 }

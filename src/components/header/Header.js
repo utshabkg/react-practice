@@ -5,19 +5,19 @@ const Header = () => {
   return (
     <div className="header">
       <Link to={"/"}>
-        <h1>Home</h1>
+        <h3>Home</h3>
       </Link>
       <Link to={"/movie"}>
-        <h1>Movie</h1>
+        <h3>Movie</h3>
       </Link>
       <Link to={"/counter"}>
-        <h1>Counter</h1>
+        <h3>Counter</h3>
       </Link>
       <Link to={"/employees"}>
-        <h1>Employees</h1>
+        <h3>Employees</h3>
       </Link>
       <Link to={"/about"}>
-        <h1>About</h1>
+        <h3>About</h3>
       </Link>
     </div>
   );
