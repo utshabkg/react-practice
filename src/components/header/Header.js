@@ -1,24 +1,29 @@
 import "./header.scss";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      color: isActive ? "yellow" : "white",
+    };
+  };
   return (
     <div className="header">
-      <Link to={"/"}>
+      <NavLink style={navLinkStyles} to={"/"}>
         <h3>Home</h3>
-      </Link>
-      <Link to={"/movie"}>
+      </NavLink>
+      <NavLink style={navLinkStyles} to={"/movie"}>
         <h3>Movie</h3>
-      </Link>
-      <Link to={"/counter"}>
+      </NavLink>
+      <NavLink style={navLinkStyles} to={"/counter"}>
         <h3>Counter</h3>
-      </Link>
-      <Link to={"/employees"}>
+      </NavLink>
+      <NavLink style={navLinkStyles} to={"/employees"}>
         <h3>Employees</h3>
-      </Link>
-      <Link to={"/about"}>
+      </NavLink>
+      <NavLink style={navLinkStyles} to={"/about"}>
         <h3>About</h3>
-      </Link>
+      </NavLink>
     </div>
   );
 };
