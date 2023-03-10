@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
+import UserDetails from "./components/home/UserDetails";
 import Movie from "./components/movie/Movie";
 import Counter from "./components/counter/Counter";
 import About from "./components/about/About";
@@ -18,7 +19,12 @@ function App() {
         <Header />
 
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="/app" element={<Home />} />
+          </Route>
+          <Route path="/app/:userId" element={<UserDetails />} />
+
           <Route path="/movie" element={<Movie />} />
           <Route path="/counter" element={<Counter />} />
           <Route path="/about" element={<About />} />

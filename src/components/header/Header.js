@@ -1,5 +1,5 @@
 import "./header.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const navLinkStyles = ({ isActive }) => {
@@ -9,7 +9,7 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <NavLink style={navLinkStyles} to={"/"}>
+      <NavLink style={navLinkStyles} to={"/app"}>
         <h3>Home</h3>
       </NavLink>
       <NavLink style={navLinkStyles} to={"/movie"}>

@@ -1,5 +1,5 @@
 import "./home.scss";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, Link } from "react";
 
 const Home = () => {
   const [state, setState] = useState(2);
@@ -27,11 +27,13 @@ const Home = () => {
       </div>
       {data.map((element, index) => {
         return (
-          <div key={index} className="data">
-            <h4>{element.firstName}</h4>
-            <h4>{element.lastName}</h4>
-            <h4>{element.email}</h4>
-          </div>
+          <Link to={`/app/${element.id}`}>
+            <div key={index} className="data">
+              <h4>{element.firstName}</h4>
+              <h4>{element.lastName}</h4>
+              <h4>{element.email}</h4>
+            </div>
+          </Link>
         );
       })}
       <button onClick={() => setState(state + 2)} className="btn-fetch">
