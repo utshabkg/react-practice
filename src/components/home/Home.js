@@ -1,5 +1,6 @@
 import "./home.scss";
-import React, { useState, useEffect, Link } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [state, setState] = useState(2);
