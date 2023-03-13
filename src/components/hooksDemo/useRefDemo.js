@@ -13,6 +13,7 @@ const UseRefDemo = () => {
     setInput(e.target.value);
   };
   const clickHandler = () => {
+    inputField.current.style.border = "4px solid red";
     inputField.current.value = "Utshab";
     inputField.current.focus();
   };
