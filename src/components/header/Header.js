@@ -27,6 +27,9 @@ const Header = () => {
       <NavLink style={navLinkStyles} to={"/contact"}>
         <h3>Contact</h3>
       </NavLink>
+      <NavLink style={navLinkStyles} to={"/userefdemo"}>
+        <h3>useRef Demo</h3>
+      </NavLink>
     </div>
   );
 };

@@ -9,6 +9,7 @@ import Contact from "./components/contact/Contact";
 import Insta from "./components/contact/Insta";
 import Mail from "./components/contact/Mail";
 import Error from "./components/error/Error";
+import UseRefDemo from "./components/hooksDemo/useRefDemo";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="insta" element={<Insta />} />
             <Route path="mail" element={<Mail />} />
           </Route>
+          <Route path="/userefdemo" element={<UseRefDemo />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
