@@ -13,7 +13,6 @@ const Home = () => {
       );
       const response = await get.json();
       setData(response);
-      console.log(response);
     }
 
     getData();
@@ -28,7 +27,7 @@ const Home = () => {
       </div>
       {data.map((element, index) => {
         return (
-          <Link to={`/app/${element.id}`}>
+          <Link to={`/${element.id}`}>
             <div key={index} className="data">
               <h4>{element.firstName}</h4>
               <h4>{element.lastName}</h4>

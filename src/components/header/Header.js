@@ -9,7 +9,7 @@ const Header = () => {
   };
   return (
     <div className="header">
-      <NavLink style={navLinkStyles} to={"/app"}>
+      <NavLink style={navLinkStyles} to={"/"}>
         <h3>Home</h3>
       </NavLink>
       <NavLink style={navLinkStyles} to={"/movie"}>

@@ -19,11 +19,8 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="/app" element={<Home />} />
-          </Route>
-          <Route path="/app/:userId" element={<UserDetails />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/:userId" element={<UserDetails />} />
 
           <Route path="/movie" element={<Movie />} />
           <Route path="/counter" element={<Counter />} />
