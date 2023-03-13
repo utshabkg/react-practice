@@ -30,6 +30,9 @@ const Header = () => {
       <NavLink style={navLinkStyles} to={"/userefdemo"}>
         <h3>useRef Demo</h3>
       </NavLink>
+      <NavLink style={navLinkStyles} to={"/usereducerdemo"}>
+        <h3>useReducer Demo</h3>
+      </NavLink>
     </div>
   );
 };
