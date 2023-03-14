@@ -33,6 +33,9 @@ const Header = () => {
       <NavLink style={navLinkStyles} to={"/customhookdemo"}>
         <h3>Custom Hook</h3>
       </NavLink>
+      <NavLink style={navLinkStyles} to={"/usememodemo"}>
+        <h3>useMemo Demo</h3>
+      </NavLink>
     </div>
   );
 };

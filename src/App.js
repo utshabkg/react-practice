@@ -10,6 +10,7 @@ import Mail from "./components/contact/Mail";
 import Error from "./components/error/Error";
 import UseRefDemo from "./components/hooksDemo/UseRefDemo";
 import UseReducerDemo from "./components/hooksDemo/UseReducerDemo";
+import UseMemoDemo from "./components/hooksDemo/UseMemoDemo";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -32,6 +33,7 @@ function App() {
           </Route>
           <Route path="/userefdemo" element={<UseRefDemo />} />
           <Route path="/usereducerdemo" element={<UseReducerDemo />} />
+          <Route path="/usememodemo" element={<UseMemoDemo />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
