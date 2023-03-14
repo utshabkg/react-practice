@@ -1,10 +1,8 @@
 import "./home.scss";
 import { Link } from "react-router-dom";
 import CustomHookFetchData from "../hooksDemo/CustomHookFetchData";
-import { useState } from "react";
 
 const Home = () => {
-  const [state, setState] = useState(2);
   const [data] = CustomHookFetchData(
     "https://hub.dummyapis.com/employee?noofRecords=2&idStarts=1001",
     2
