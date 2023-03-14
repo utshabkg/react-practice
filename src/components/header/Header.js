@@ -21,9 +21,6 @@ const Header = () => {
       <NavLink style={navLinkStyles} to={"/employees"}>
         <h3>Employees</h3>
       </NavLink>
-      <NavLink style={navLinkStyles} to={"/about"}>
-        <h3>About</h3>
-      </NavLink>
       <NavLink style={navLinkStyles} to={"/contact"}>
         <h3>Contact</h3>
       </NavLink>
@@ -32,6 +29,9 @@ const Header = () => {
       </NavLink>
       <NavLink style={navLinkStyles} to={"/usereducerdemo"}>
         <h3>useReducer Demo</h3>
+      </NavLink>
+      <NavLink style={navLinkStyles} to={"/customhookdemo"}>
+        <h3>Custom Hook</h3>
       </NavLink>
     </div>
   );

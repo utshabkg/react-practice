@@ -1,25 +1,18 @@
 import "./home.scss";
-import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import CustomHookFetchData from "../hooksDemo/CustomHookFetchData";
+import { useState } from "react";
 
 const Home = () => {
   const [state, setState] = useState(2);
-  const [data, setData] = useState([]);
+  const [data] = CustomHookFetchData(
+    "https://hub.dummyapis.com/employee?noofRecords=2&idStarts=1001",
+    2
+  );
 
-  useEffect(() => {
-    async function getData() {
-      const get = await fetch(
-        `https://hub.dummyapis.com/employee?noofRecords=${state}&idStarts=1001`
-      );
-      const response = await get.json();
-      setData(response);
-    }
-
-    getData();
-  }, [state]);
   return (
     <div className="demo">
-      <h2>Demo Employee List [Showing {state}]</h2>
+      {/* <h2>Demo Employee List [Showing {state}]</h2> */}
       <div className="data" style={{ color: "yellow" }}>
         <h4>First Name</h4>
         <h4>Last Name</h4>
@@ -36,9 +29,9 @@ const Home = () => {
           </Link>
         );
       })}
-      <button onClick={() => setState(state + 2)} className="btn-fetch">
+      {/* <button onClick={() => setState(state + 2)} className="btn-fetch">
         Fetch 2 more entries
-      </button>
+      </button> */}
     </div>
   );
 };
