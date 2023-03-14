@@ -12,6 +12,7 @@ import UseRefDemo from "./components/hooksDemo/UseRefDemo";
 import UseReducerDemo from "./components/hooksDemo/UseReducerDemo";
 import UseMemoDemo from "./components/hooksDemo/UseMemoDemo";
 import UseCallbackDemo from "./components/hooksDemo/UseCallbackDemo";
+import Loader from "./components/loader/Loader";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -32,10 +33,12 @@ function App() {
             <Route path="insta" element={<Insta />} />
             <Route path="mail" element={<Mail />} />
           </Route>
+
           <Route path="/userefdemo" element={<UseRefDemo />} />
           <Route path="/usereducerdemo" element={<UseReducerDemo />} />
           <Route path="/usememodemo" element={<UseMemoDemo />} />
           <Route path="/usecallbackdemo" element={<UseCallbackDemo />} />
+          <Route path="/loaderdemo" element={<Loader />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
