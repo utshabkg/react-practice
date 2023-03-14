@@ -11,6 +11,7 @@ import Error from "./components/error/Error";
 import UseRefDemo from "./components/hooksDemo/UseRefDemo";
 import UseReducerDemo from "./components/hooksDemo/UseReducerDemo";
 import UseMemoDemo from "./components/hooksDemo/UseMemoDemo";
+import UseCallbackDemo from "./components/hooksDemo/UseCallbackDemo";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/userefdemo" element={<UseRefDemo />} />
           <Route path="/usereducerdemo" element={<UseReducerDemo />} />
           <Route path="/usememodemo" element={<UseMemoDemo />} />
+          <Route path="/usecallbackdemo" element={<UseCallbackDemo />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
