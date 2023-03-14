@@ -15,12 +15,14 @@ import UseCallbackDemo from "./components/hooksDemo/UseCallbackDemo";
 import Loader from "./components/loader/Loader";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
+        <ToastContainer />
 
         <Routes>
           <Route path="/" element={<Home />} />
